@@ -114,14 +114,12 @@ This skill uses **progressive disclosure** — the main `SKILL.md` is a concise 
 
 | File                      | Purpose                        | Loaded When               |
 | ------------------------- | ------------------------------ | ------------------------- |
-| `SKILL.md`                | Core workflow and rules        | Always (skill invocation) |
-| `STYLE_PRESETS.md`        | 12 curated visual presets      | Phase 2 (style selection) |
-| `viewport-base.css`       | Mandatory responsive CSS       | Phase 3 (generation)      |
-| `html-template.md`        | HTML structure and JS features | Phase 3 (generation)      |
-| `animation-patterns.md`   | CSS/JS animation reference     | Phase 3 (generation)      |
-| `scripts/extract-pptx.py` | PPT content extraction         | Phase 4 (conversion)      |
-| `scripts/deploy.sh`       | Deploy to Vercel               | Phase 6 (sharing)         |
-| `scripts/export-pdf.sh`   | Export slides to PDF           | Phase 6 (sharing)         |
+| `SKILL.md`                | Core workflow and rules                 | Always (skill invocation) |
+| `STYLE_PRESETS.md`        | 12 curated visual presets               | Phase 2 (style selection) |
+| `viewport-base.css`       | Mandatory responsive CSS                | Phase 3 (generation)      |
+| `html-template.md`        | HTML structure and JS features          | Phase 3 (generation)      |
+| `animation-patterns.md`   | CSS/JS animation reference              | Phase 3 (generation)      |
+| `scripts/extract-pptx.py` | PPT content extraction via `uv run`     | Phase 4 (conversion)      |
 
 This design follows [OpenAI's harness engineering](https://openai.com/index/harness-engineering/) principle: "give the agent a map, not a 1,000-page instruction manual."
 
@@ -137,39 +135,18 @@ This skill was born from the belief that:
 
 4. **Comments are kindness.** Code should explain itself to future-you (or anyone else who opens it).
 
-## Sharing Your Presentations
+## Local-First Fork Notes
 
-After creating a presentation, the skill offers two ways to share it:
+This fork intentionally removes the bundled deployment and PDF export helpers.
 
-### Deploy to a Live URL
-
-One command deploys your slides to a permanent, shareable URL that works on any device — phones, tablets, laptops:
-
-```bash
-bash scripts/deploy.sh ./my-deck/
-# or
-bash scripts/deploy.sh ./presentation.html
-```
-
-Uses [Vercel](https://vercel.com) (free tier). The skill walks you through signup and login if it's your first time.
-
-### Export to PDF
-
-Convert your slides to a PDF for email, Slack, Notion, or printing:
-
-```bash
-bash scripts/export-pdf.sh ./my-deck/index.html
-bash scripts/export-pdf.sh ./presentation.html ./output.pdf
-```
-
-Uses [Playwright](https://playwright.dev) to screenshot each slide at 1920×1080 and combine into a PDF. Installs automatically if needed. Animations are not preserved (it's a static snapshot).
+- Presentations stay local by default.
+- Generated HTML should use broadly available local/system font stacks only.
+- No remote font CDNs should be added to generated decks.
 
 ## Requirements
 
 - [Claude Code](https://claude.ai/claude-code) CLI
-- For PPT conversion: Python with `python-pptx` library
-- For URL deployment: Node.js + Vercel account (free)
-- For PDF export: Node.js (Playwright installs automatically)
+- For PPT conversion: [uv](https://docs.astral.sh/uv/)
 
 ## Credits
 

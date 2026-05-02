@@ -12,8 +12,7 @@ Reference architecture for generating slide presentations. Every presentation fo
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Presentation Title</title>
 
-    <!-- Fonts: use Fontshare or Google Fonts — never system fonts -->
-    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=..." />
+    <!-- Fonts: use common local/system font stacks only — no remote font downloads -->
 
     <style>
       /* ===========================================
@@ -30,8 +29,8 @@ Reference architecture for generating slide presentations. Every presentation fo
         --accent-glow: rgba(0, 255, 204, 0.3);
 
         /* Typography — MUST use clamp() */
-        --font-display: "Clash Display", sans-serif;
-        --font-body: "Satoshi", sans-serif;
+        --font-display: Georgia, "Times New Roman", serif;
+        --font-body: "Trebuchet MS", Verdana, Arial, sans-serif;
         --title-size: clamp(2rem, 6vw, 5rem);
         --subtitle-size: clamp(0.875rem, 2vw, 1.25rem);
         --body-size: clamp(0.75rem, 1.2vw, 1rem);
