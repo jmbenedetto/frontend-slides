@@ -15,8 +15,8 @@ Curated visual styles for Frontend Slides. Each preset is inspired by real desig
 **Layout:** Colored card on dark gradient. Number top-left, navigation top-right, title bottom-left.
 
 **Typography:**
-- Display: `Archivo Black` (900)
-- Body: `Space Grotesk` (400/500)
+- Display: `Arial Black`
+- Body: `Trebuchet MS` / `Arial`
 
 **Colors:**
 ```css
@@ -44,8 +44,8 @@ Curated visual styles for Frontend Slides. Each preset is inspired by real desig
 **Layout:** Split panel—white top, blue bottom. Brand marks in corners.
 
 **Typography:**
-- Display: `Manrope` (800)
-- Body: `Manrope` (400/500)
+- Display: `Verdana` (bold)
+- Body: `Verdana` / `Arial`
 
 **Colors:**
 ```css
@@ -73,8 +73,8 @@ Curated visual styles for Frontend Slides. Each preset is inspired by real desig
 **Layout:** Split panels—electric blue left, dark right. Script accents.
 
 **Typography:**
-- Display: `Syne` (700/800)
-- Mono: `Space Mono` (400/700)
+- Display: `Impact`
+- Mono: `Courier New` / `Monaco`
 
 **Colors:**
 ```css
@@ -90,7 +90,7 @@ Curated visual styles for Frontend Slides. Each preset is inspired by real desig
 - Electric blue + neon yellow contrast
 - Halftone texture patterns
 - Neon badges/callouts
-- Script typography for creative flair
+- High-contrast display + mono pairing for creative flair
 
 ---
 
@@ -101,8 +101,8 @@ Curated visual styles for Frontend Slides. Each preset is inspired by real desig
 **Layout:** Centered content on dark. Abstract soft shapes in corner.
 
 **Typography:**
-- Display: `Cormorant` (400/600) — elegant serif
-- Body: `IBM Plex Sans` (300/400)
+- Display: `Georgia` / `Times New Roman` — elegant serif
+- Body: `Verdana` / `Arial`
 
 **Colors:**
 ```css
@@ -134,8 +134,8 @@ Curated visual styles for Frontend Slides. Each preset is inspired by real desig
 **Layout:** Cream paper card on dark background. Colorful tabs on right edge.
 
 **Typography:**
-- Display: `Bodoni Moda` (400/700) — classic editorial
-- Body: `DM Sans` (400/500)
+- Display: `Georgia` / `Times New Roman` — classic editorial
+- Body: `Trebuchet MS` / `Arial`
 
 **Colors:**
 ```css
@@ -166,8 +166,8 @@ Curated visual styles for Frontend Slides. Each preset is inspired by real desig
 **Layout:** White card on pastel background. Vertical pills on right edge.
 
 **Typography:**
-- Display: `Plus Jakarta Sans` (700/800)
-- Body: `Plus Jakarta Sans` (400/500)
+- Display: `Trebuchet MS` (bold)
+- Body: `Trebuchet MS` / `Verdana`
 
 **Colors:**
 ```css
@@ -197,8 +197,8 @@ Curated visual styles for Frontend Slides. Each preset is inspired by real desig
 **Layout:** Two-color vertical split (peach left, lavender right).
 
 **Typography:**
-- Display: `Outfit` (700/800)
-- Body: `Outfit` (400/500)
+- Display: `Verdana` (bold)
+- Body: `Verdana` / `Arial`
 
 **Colors:**
 ```css
@@ -227,8 +227,8 @@ Curated visual styles for Frontend Slides. Each preset is inspired by real desig
 **Layout:** Centered content on cream. Abstract geometric shapes as accent.
 
 **Typography:**
-- Display: `Fraunces` (700/900) — distinctive serif
-- Body: `Work Sans` (400/500)
+- Display: `Georgia` / `Times New Roman` — distinctive serif
+- Body: `Arial` / `Trebuchet MS`
 
 **Colors:**
 ```css
@@ -254,7 +254,7 @@ Curated visual styles for Frontend Slides. Each preset is inspired by real desig
 
 **Vibe:** Futuristic, techy, confident
 
-**Typography:** `Clash Display` + `Satoshi` (Fontshare)
+**Typography:** `Arial Black` + `Trebuchet MS`
 
 **Colors:** Deep navy (#0a0f1c), cyan accent (#00ffcc), magenta (#ff00aa)
 
@@ -266,7 +266,7 @@ Curated visual styles for Frontend Slides. Each preset is inspired by real desig
 
 **Vibe:** Developer-focused, hacker aesthetic
 
-**Typography:** `JetBrains Mono` (monospace only)
+**Typography:** `Consolas`, `Monaco`, `Courier New` (monospace only)
 
 **Colors:** GitHub dark (#0d1117), terminal green (#39d353)
 
@@ -278,7 +278,7 @@ Curated visual styles for Frontend Slides. Each preset is inspired by real desig
 
 **Vibe:** Clean, precise, Bauhaus-inspired
 
-**Typography:** `Archivo` (800) + `Nunito` (400)
+**Typography:** `Arial Black` + `Arial`
 
 **Colors:** Pure white, pure black, red accent (#ff3300)
 
@@ -290,7 +290,7 @@ Curated visual styles for Frontend Slides. Each preset is inspired by real desig
 
 **Vibe:** Editorial, literary, thoughtful
 
-**Typography:** `Cormorant Garamond` + `Source Serif 4`
+**Typography:** `Georgia` + `Times New Roman`
 
 **Colors:** Warm cream (#faf9f7), charcoal (#1a1a1a), crimson accent (#c41e3a)
 
@@ -302,22 +302,24 @@ Curated visual styles for Frontend Slides. Each preset is inspired by real desig
 
 | Preset | Display Font | Body Font | Source |
 |--------|--------------|-----------|--------|
-| Bold Signal | Archivo Black | Space Grotesk | Google |
-| Electric Studio | Manrope | Manrope | Google |
-| Creative Voltage | Syne | Space Mono | Google |
-| Dark Botanical | Cormorant | IBM Plex Sans | Google |
-| Notebook Tabs | Bodoni Moda | DM Sans | Google |
-| Pastel Geometry | Plus Jakarta Sans | Plus Jakarta Sans | Google |
-| Split Pastel | Outfit | Outfit | Google |
-| Vintage Editorial | Fraunces | Work Sans | Google |
-| Neon Cyber | Clash Display | Satoshi | Fontshare |
-| Terminal Green | JetBrains Mono | JetBrains Mono | JetBrains |
+| Bold Signal | Arial Black | Trebuchet MS | Local/System |
+| Electric Studio | Verdana | Verdana | Local/System |
+| Creative Voltage | Impact | Courier New | Local/System |
+| Dark Botanical | Georgia | Verdana | Local/System |
+| Notebook Tabs | Georgia | Trebuchet MS | Local/System |
+| Pastel Geometry | Trebuchet MS | Trebuchet MS | Local/System |
+| Split Pastel | Verdana | Verdana | Local/System |
+| Vintage Editorial | Georgia | Arial | Local/System |
+| Neon Cyber | Arial Black | Trebuchet MS | Local/System |
+| Terminal Green | Consolas | Courier New | Local/System |
+| Swiss Modern | Arial Black | Arial | Local/System |
+| Paper & Ink | Georgia | Times New Roman | Local/System |
 
 ---
 
 ## DO NOT USE (Generic AI Patterns)
 
-**Fonts:** Inter, Roboto, Arial, system fonts as display
+**Fonts:** remote-only web fonts, or the same default stack reused for every preset
 
 **Colors:** `#6366f1` (generic indigo), purple gradients on white
 
